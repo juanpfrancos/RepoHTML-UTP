@@ -37,6 +37,24 @@ p {
   font-size: 1.5rem;
   margin: 1rem;
 }
+.responseT {
+  font-family: "Inter", sans-serif;
+  margin: 1rem;
+}
+.responseP {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+#sign {
+  max-width: 300px;
+}
+.signbox,
+.signbox h1 h2 {
+  max-width: 300px;
+  text-align: left !important;
+  margin: 0 !important;
+}
 .text {
   padding-left: 2.5em;
 }
