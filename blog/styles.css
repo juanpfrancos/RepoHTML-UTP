@@ -1,0 +1,112 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+/*Typography*/
+@font-face {
+  font-family: "charter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/be78681/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/charter-400-normal.woff")
+    format("woff");
+}
+
+h1,
+h2,
+p {
+  font-family: charter;
+  font-size: 20px;
+}
+
+/*Cards*/
+#imagePostCard {
+  width: 48px;
+  border-radius: 50%;
+}
+.cardPost {
+  display: inline-flex;
+}
+
+.card img {
+  width: 88px;
+  border-radius: 50%;
+}
+/*Main Containers*/
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.container .wrap {
+  flex-wrap: wrap;
+}
+
+.left {
+  background-color: aqua;
+}
+
+.center {
+  background-color: beige;
+}
+
+.right {
+  background-color: blanchedalmond;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+li {
+  list-style: none;
+}
+
+/*Button Container*/
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.buttons button {
+  background: black;
+  color: white;
+  padding: 1em;
+  border-radius: 20px;
+  border: none;
+}
+
+.buttons .container a {
+  color: rgba(26, 137, 23, 1);
+  text-decoration: none;
+}
+
+.inputBar {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background: white;
+}
+
+.inputBar input {
+  border: none;
+  height: 25px;
+}
+
+.inputBar input:active {
+  border: none;
+}
+
+#iconsmsg {
+  stroke: white;
+}
+
+.greenButton {
+  background-color: rgba(26, 137, 23, 1);
+  border: none;
+}
