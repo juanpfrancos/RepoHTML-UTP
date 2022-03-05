@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <table>
         <caption>
-            <div>
-                <p>User <strong>Management</strong></p>
+            <div id="captionActions">
+                <div>
+                    <p>User <strong>Management</strong></p>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-file"></i> Export To Excel</button>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-circle-plus"></i> Add New User</button>
+                </div>
             </div>
-            <div>
-                <button><i class="fa-solid fa-file"></i> Export To Excel</button>
-            </div>
-            <div>
-                <button><i class="fa-solid fa-circle-plus"></i> Add New User</button>
-            </div>
+
            </caption>
         <thead>
             <tr>
@@ -36,7 +40,7 @@
         <!--
         <tfoot>
             <tr>
-                <td>Showing 5 of total entries</td>
+                <td>Showing 20 of total entries</td>
             </tr>
         </tfoot>
     -->
