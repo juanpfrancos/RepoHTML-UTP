@@ -5,26 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Character Rick And Morty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <table>
-        <caption>User <strong>Management</strong></caption>
+        <caption>
+            <div>
+                <p>User <strong>Management</strong></p>
+            </div>
+            <div>
+                <button><i class="fa-solid fa-file"></i> Export To Excel</button>
+            </div>
+            <div>
+                <button><i class="fa-solid fa-circle-plus"></i> Add New User</button>
+            </div>
+           </caption>
         <thead>
             <tr>
                 <th>#</th>
                 <th>Name</th>
                 <th>Status</th>
                 <th>Species</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody id="dataContainer">
         </tbody>
+        <!--
         <tfoot>
             <tr>
                 <td>Showing 5 of total entries</td>
             </tr>
         </tfoot>
+    -->
     </table>
     <script src="scripts.js"></script>
+
 </body>
 </html>
