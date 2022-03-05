@@ -1,21 +1,15 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-
+@import url("./fonts/stylesheet.css");
 /*Typography*/
-@font-face {
-  font-family: "charter";
-  font-weight: 400;
-  font-style: normal;
-  src: url("https://glyph.medium.com/font/be78681/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/charter-400-normal.woff")
-    format("woff");
-}
 
 h1,
-h2,
-p {
-  font-family: charter;
-  font-size: 20px;
+h2 {
+  font-family: charterbold;
+  font-weight: bolder;
 }
-
+p {
+  font-family: charterregular;
+}
 /*Cards*/
 #imagePostCard {
   width: 48px;
@@ -33,7 +27,6 @@ p {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: row;
   justify-content: center;
   align-items: stretch;
 }
@@ -42,12 +35,17 @@ p {
   flex-wrap: wrap;
 }
 
+.container .button {
+  align-items: center;
+}
 .left {
   background-color: aqua;
+  width: 300px;
 }
 
 .center {
   background-color: beige;
+  padding: 5em;
 }
 
 .right {
