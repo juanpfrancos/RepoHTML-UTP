@@ -1,19 +1,30 @@
 fetch('https://rickandmortyapi.com/api/character')
   .then(response => response.json())
-  .then(data => console.log(data.results));
+.then(function(data) {
+  let characters = data.results;
+  return characters.map(function(character) {
+    console.log(character)
 
-let tr = document.createElement("tr");
-tr.setAttribute("id", "div1");  
+    /*Create row container*/
+    let tr = document.createElement("tr");
+    tr.setAttribute("id", 'id_'+character.id);  
+    let container = document.getElementById("dataContainer")
+    container.appendChild(tr)
 
-let id = document.createElement("td");
-let nameV = document.createElement("td");
-let statusV = document.createElement("td");
-let specieV = document.createElement("td");
-id.textContent = 2
-nameV.textContent = 'Nombre'
-statusV.textContent = 'Estado'
-specieV.textContent = 'Animal'
-document.getElementById("myList").appendChild(id);
-document.getElementById("myList").appendChild(nameV);
-document.getElementById("myList").appendChild(statusV);
-document.getElementById("myList").appendChild(specieV);
+    /*Create each row*/
+    let id = document.createElement("td");
+    let nameC = document.createElement("td");
+    let statusC= document.createElement("td");
+    let specieC = document.createElement("td");
+    id.textContent = character.id
+    nameC.textContent = character.name
+    statusC.textContent = character.status
+    specieC.textContent = character.species
+    document.getElementById('id_'+character.id).appendChild(id);
+    document.getElementById('id_'+character.id).appendChild(nameC);
+    document.getElementById('id_'+character.id).appendChild(statusC);
+    document.getElementById('id_'+character.id).appendChild(specieC);
+  })
+})
+
+
